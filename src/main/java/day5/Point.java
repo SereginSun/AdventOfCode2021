@@ -3,13 +3,8 @@ package day5;
 import java.util.Objects;
 
 public class Point {
-    private int x;
-    private int y;
-
-    public Point(String[] vals) {
-        this.x = Integer.parseInt(vals[0]);
-        this.y = Integer.parseInt(vals[1]);
-    }
+    private final int x;
+    private final int y;
 
     public Point(int x, int y) {
         this.x = x;
@@ -20,16 +15,8 @@ public class Point {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
     public int getY() {
         return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
     @Override
