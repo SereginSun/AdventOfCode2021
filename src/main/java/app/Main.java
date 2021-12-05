@@ -17,8 +17,8 @@ public class Main {
         Reader input = new Reader();
         File file = input.getFileFromResource("day5.txt");
         input.readFileToList(file);
-        Solution task1 = new PartOne(input, output);
-        task1.solution();
+//        Solution task1 = new PartOne(input, output);
+//        task1.solution();
         Solution task2= new PartTwo(input, output);
         task2.solution();
     }
