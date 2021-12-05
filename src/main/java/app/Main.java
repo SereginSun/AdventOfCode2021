@@ -1,7 +1,7 @@
 package app;
 
-import day3.PartOne;
-import day3.PartTwo;
+import day5.PartOne;
+import day5.PartTwo;
 
 import java.util.function.Consumer;
 import java.io.File;
@@ -15,7 +15,7 @@ public class Main {
 
     public void init() {
         Reader input = new Reader();
-        File file = input.getFileFromResource("day3.txt");
+        File file = input.getFileFromResource("day5.txt");
         input.readFileToList(file);
         Solution task1 = new PartOne(input, output);
         task1.solution();
